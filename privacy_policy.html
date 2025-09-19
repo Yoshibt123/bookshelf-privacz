@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutzerklärung - Bookshelf App</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background-color: #faf9f6;
+        }
+        .header {
+            text-align: center;
+            background: linear-gradient(135deg, #8B4513, #D2B48C);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .language-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        .tab {
+            background: #8B4513;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .tab.active {
+            background: #D2B48C;
+            color: #333;
+        }
+        .content {
+            display: none;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .content.active {
+            display: block;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .section h3 {
+            color: #8B4513;
+            border-bottom: 2px solid #D2B48C;
+            padding-bottom: 10px;
+        }
+        .section h4 {
+            color: #A0522D;
+            margin-top: 20px;
+        }
+        .highlight {
+            background: #FFF8DC;
+            padding: 15px;
+            border-left: 4px solid #8B4513;
+            margin: 15px 0;
+        }
+        .contact {
+            background: #8B4513;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        .contact a {
+            color: #D2B48C;
+            text-decoration: none;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📚 Bookshelf App</h1>
+        <h2>Datenschutzerklärung / Privacy Policy</h2>
+        <p><strong>Letzte Aktualisierung:</strong> 19. September 2025</p>
+    </div>
+
+    <div class="language-tabs">
+        <button class="tab active" onclick="showLanguage('de')">🇩🇪 Deutsch</button>
+        <button class="tab" onclick="showLanguage('en')">🇺🇸 English</button>
+        <button class="tab" onclick="showLanguage('es')">🇪🇸 Español</button>
+    </div>
+
+    <!-- German Content -->
+    <div id="de" class="content active">
+        <div class="section">
+            <h3>1. Verantwortlicher</h3>
+            <p><strong>Entwickler:</strong> YBuilds<br>
+            <strong>Kontakt:</strong> support@ybuilds.com<br>
+            <strong>App:</strong> Bookshelf (com.ybuilds.bookshelf)</p>
+        </div>
+
+        <div class="section">
+            <h3>2. Erhobene Daten und Berechtigungen</h3>
+            
+            <div class="highlight">
+                <h4>🎥 Kamera-Berechtigung (android.permission.CAMERA)</h4>
+                <ul>
+                    <li><strong>Zweck:</strong> Scannen von Buch-Barcodes mit der integrierten QR/Barcode-Scanner-Funktion</li>
+                    <li><strong>Datenverarbeitung:</strong> Die Kamera wird ausschließlich zum Scannen von Barcodes verwendet. Es werden keine Fotos gespeichert oder übertragen</li>
+                    <li><strong>Speicherung:</strong> Nur die gescannten Barcode-Daten (ISBN) werden lokal auf Ihrem Gerät gespeichert</li>
+                    <li><strong>Übertragung:</strong> Keine Kamerabilder werden an externe Server übertragen</li>
+                </ul>
+            </div>
+
+            <h4>🌐 Internet-Berechtigung (android.permission.INTERNET)</h4>
+            <ul>
+                <li><strong>Zweck:</strong> Abrufen von Buchinformationen basierend auf gescannten ISBN-Nummern</li>
+                <li><strong>Datenverarbeitung:</strong> Nur ISBN-Nummern werden an Buchinfo-APIs gesendet</li>
+                <li><strong>Speicherung:</strong> Buchinformationen werden lokal auf Ihrem Gerät gespeichert</li>
+            </ul>
+
+            <h4>💾 Speicher-Berechtigungen</h4>
+            <ul>
+                <li><strong>Zweck:</strong> Exportieren Ihrer Buchsammlung als CSV-Datei</li>
+                <li><strong>Datenverarbeitung:</strong> Ihre Buchdaten werden nur auf Ihrem Gerät gespeichert</li>
+                <li><strong>Übertragung:</strong> Daten werden nur übertragen, wenn Sie aktiv die Teilen-Funktion verwenden</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>3. Datenspeicherung</h3>
+            <ul>
+                <li><strong>Lokal:</strong> Alle Ihre Buchdaten werden ausschließlich lokal auf Ihrem Gerät gespeichert</li>
+                <li><strong>Keine Cloud:</strong> Wir speichern keine Daten auf externen Servern</li>
+                <li><strong>Kontrolle:</strong> Sie haben jederzeit vollständige Kontrolle über Ihre Daten</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>4. Datenweitergabe</h3>
+            <ul>
+                <li><strong>Keine Weitergabe:</strong> Ihre persönlichen Daten werden nicht an Dritte weitergegeben</li>
+                <li><strong>APIs:</strong> Nur anonyme ISBN-Abfragen werden an öffentliche Buchinfo-APIs gesendet</li>
+                <li><strong>Teilen:</strong> Daten werden nur geteilt, wenn Sie dies explizit über die App-Funktionen tun</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>5. Ihre Rechte</h3>
+            <ul>
+                <li><strong>Löschung:</strong> Sie können alle Daten jederzeit über die App-Einstellungen löschen</li>
+                <li><strong>Zugriff:</strong> Sie haben jederzeit Zugriff auf alle Ihre in der App gespeicherten Daten</li>
+                <li><strong>Export:</strong> Sie können Ihre Daten als CSV-Datei exportieren</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>6. Datensicherheit</h3>
+            <ul>
+                <li><strong>Verschlüsselung:</strong> Daten werden sicher auf Ihrem Gerät gespeichert</li>
+                <li><strong>Zugriff:</strong> Nur Sie haben Zugriff auf Ihre Buchdaten</li>
+                <li><strong>Updates:</strong> Regelmäßige Sicherheitsupdates der App</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- English Content -->
+    <div id="en" class="content">
+        <div class="section">
+            <h3>1. Data Controller</h3>
+            <p><strong>Developer:</strong> YBuilds<br>
+            <strong>Contact:</strong> support@ybuilds.com<br>
+            <strong>App:</strong> Bookshelf (com.ybuilds.bookshelf)</p>
+        </div>
+
+        <div class="section">
+            <h3>2. Data Collection and Permissions</h3>
+            
+            <div class="highlight">
+                <h4>🎥 Camera Permission (android.permission.CAMERA)</h4>
+                <ul>
+                    <li><strong>Purpose:</strong> Scanning book barcodes using the integrated QR/barcode scanner feature</li>
+                    <li><strong>Data Processing:</strong> Camera is used exclusively for barcode scanning. No photos are stored or transmitted</li>
+                    <li><strong>Storage:</strong> Only scanned barcode data (ISBN) is stored locally on your device</li>
+                    <li><strong>Transmission:</strong> No camera images are transmitted to external servers</li>
+                </ul>
+            </div>
+
+            <h4>🌐 Internet Permission (android.permission.INTERNET)</h4>
+            <ul>
+                <li><strong>Purpose:</strong> Retrieving book information based on scanned ISBN numbers</li>
+                <li><strong>Data Processing:</strong> Only ISBN numbers are sent to book information APIs</li>
+                <li><strong>Storage:</strong> Book information is stored locally on your device</li>
+            </ul>
+
+            <h4>💾 Storage Permissions</h4>
+            <ul>
+                <li><strong>Purpose:</strong> Exporting your book collection as CSV file</li>
+                <li><strong>Data Processing:</strong> Your book data is only stored on your device</li>
+                <li><strong>Transmission:</strong> Data is only transmitted when you actively use the sharing function</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>3. Data Storage</h3>
+            <ul>
+                <li><strong>Local:</strong> All your book data is stored exclusively locally on your device</li>
+                <li><strong>No Cloud:</strong> We do not store any data on external servers</li>
+                <li><strong>Control:</strong> You have complete control over your data at all times</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>4. Data Sharing</h3>
+            <ul>
+                <li><strong>No Sharing:</strong> Your personal data is not shared with third parties</li>
+                <li><strong>APIs:</strong> Only anonymous ISBN queries are sent to public book information APIs</li>
+                <li><strong>Sharing:</strong> Data is only shared when you explicitly do so through app functions</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>5. Your Rights</h3>
+            <ul>
+                <li><strong>Deletion:</strong> You can delete all data anytime through app settings</li>
+                <li><strong>Access:</strong> You have access to all your data stored in the app at any time</li>
+                <li><strong>Export:</strong> You can export your data as CSV file</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>6. Data Security</h3>
+            <ul>
+                <li><strong>Encryption:</strong> Data is securely stored on your device</li>
+                <li><strong>Access:</strong> Only you have access to your book data</li>
+                <li><strong>Updates:</strong> Regular security updates of the app</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Spanish Content -->
+    <div id="es" class="content">
+        <div class="section">
+            <h3>1. Responsable del Tratamiento</h3>
+            <p><strong>Desarrollador:</strong> YBuilds<br>
+            <strong>Contacto:</strong> support@ybuilds.com<br>
+            <strong>App:</strong> Bookshelf (com.ybuilds.bookshelf)</p>
+        </div>
+
+        <div class="section">
+            <h3>2. Recopilación de Datos y Permisos</h3>
+            
+            <div class="highlight">
+                <h4>🎥 Permiso de Cámara (android.permission.CAMERA)</h4>
+                <ul>
+                    <li><strong>Propósito:</strong> Escanear códigos de barras de libros usando la función integrada de escáner QR/código de barras</li>
+                    <li><strong>Procesamiento:</strong> La cámara se usa exclusivamente para escanear códigos. No se almacenan ni transmiten fotos</li>
+                    <li><strong>Almacenamiento:</strong> Solo los datos del código escaneado (ISBN) se almacenan localmente en tu dispositivo</li>
+                    <li><strong>Transmisión:</strong> No se transmiten imágenes de la cámara a servidores externos</li>
+                </ul>
+            </div>
+
+            <h4>🌐 Permiso de Internet (android.permission.INTERNET)</h4>
+            <ul>
+                <li><strong>Propósito:</strong> Obtener información de libros basada en números ISBN escaneados</li>
+                <li><strong>Procesamiento:</strong> Solo se envían números ISBN a APIs de información de libros</li>
+                <li><strong>Almacenamiento:</strong> La información de libros se almacena localmente en tu dispositivo</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>3. Almacenamiento de Datos</h3>
+            <ul>
+                <li><strong>Local:</strong> Todos tus datos de libros se almacenan exclusivamente de forma local en tu dispositivo</li>
+                <li><strong>Sin Nube:</strong> No almacenamos ningún dato en servidores externos</li>
+                <li><strong>Control:</strong> Tienes control completo sobre tus datos en todo momento</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="contact">
+        <h3>📧 Kontakt / Contact</h3>
+        <p><strong>Email:</strong> <a href="mailto:support@ybuilds.com">support@ybuilds.com</a></p>
+        <p><strong>Website:</strong> <a href="https://ybuilds.com/bookshelf">https://ybuilds.com/bookshelf</a></p>
+        <p><strong>Entwickler:</strong> YBuilds</p>
+        <p><em>Diese Datenschutzerklärung ist in mehreren Sprachen verfügbar. Bei Unstimmigkeiten hat die deutsche Version für EU-Nutzer und die englische Version für internationale Nutzer Vorrang.</em></p>
+    </div>
+
+    <script>
+        function showLanguage(lang) {
+            // Hide all content
+            document.querySelectorAll('.content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Remove active class from all tabs
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Show selected content
+            document.getElementById(lang).classList.add('active');
+            
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
